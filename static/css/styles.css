@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "digital-7_italicitalic";
+    src: url('/static/fonts/d7-webfont.woff2') format('woff2'),
+        url('/static/fonts/d7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+body {
+    background-image: linear-gradient(to right top,
+            #d16ba5,
+            #c777b9,
+            #ba83ca,
+            #aa8fd8,
+            #9a9ae1,
+            #8aa7ec,
+            #79b3f4,
+            #69bff8,
+            #52cffe,
+            #41dfff,
+            #46eefa,
+            #5ffbf1);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.nav-wrapper {
+    display: block;
+    background-color: #1A0000;
+    padding: 5px;
+    border-radius: 0px 0px 20px 20px;
+    width: auto;
+    height: 7vh;
+}
+
+.nav-wrapper .brand-logo {
+    float: left;
+    padding: 4px;
+}
+
+.nav-wrapper a {
+    color: #F5EDCE;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.nav-wrapper .ralign {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 80%;
+}
+
+.calculator-grid {
+    background-color: #58287F;
+    border: solid 5px;
+    border-color: black;
+    border-radius: 5px;
+    width: 500px;
+    padding: 0%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid>button {
+    color: #F5EDCE;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 3px solid black;
+    outline: none;
+    background-color: #89C4E1;
+    font-family: 'digital-7_italicitalic';
+}
+
+.calculator-grid>button:hover {
+    opacity: 80%;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'digital-7_italicitalic';
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'digital-7_italicitalic';
+}
+
+
+.opsd {
+    font-family: 'digital-7_italicitalic';
+}
