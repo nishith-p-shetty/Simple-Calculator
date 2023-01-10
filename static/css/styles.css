@@ -1,7 +1,7 @@
 @font-face {
     font-family: "digital-7_italicitalic";
-    src: url('/static/fonts/d7-webfont.woff2') format('woff2'),
-        url('/static/fonts/d7-webfont.woff') format('woff');
+    src: url('static/fonts/d7-webfont.woff2') format('woff2'),
+        url('static/fonts/d7-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
